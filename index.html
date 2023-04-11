@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="./JS/index.js" type="module" defer></script>
+    <title>Tic-Tac-Toe</title>
+  </head>
+  <body>
+    <h1>Jogo da Velha</h1>
+    <hr />
+    <br />
+    <div class="container-label">
+      <label for="player1" class="player">X =</label>
+      <input type="text" id="player1" placeholder="Nome jogador 1" />
+
+      <label for="player1" class="player">O =</label>
+      <input type="text" id="player2" placeholder="Nome jogador 2" />
+
+      <div class="start-button">
+        <button id="startBtn">Começar!</button>
+      </div>
+
+      <div class="clean-button">
+        <button id="initializeBtn">Zerar!</button>
+      </div>
+    </div>
+
+    <h2 class="h2Title">Vez de:</h2>
+    <p><span id="turnPlayer"></span></p>
+
+    <section id="gameBoard">
+      <div id="gameBoard-container">
+        <span id="span1" data-region="1"></span>
+        <span id="span2" data-region="2"></span>
+        <span id="span3" data-region="3"></span>
+        <span id="span4" data-region="4"></span>
+        <span id="span5" data-region="5"></span>
+        <span id="span6" data-region="6"></span>
+        <span id="span7" data-region="7"></span>
+        <span id="span8" data-region="8"></span>
+        <span id="span9" data-region="9"></span>
+      </div>
+    </section>
+  </body>
+</html>
